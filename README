@@ -1,7 +1,19 @@
-Mac only for the moment
-
-To build you need
+Requirements
 
 Nixysa		-	http://code.google.com/p/nixysa/
 gntp-send	-	http://github.com/psinnott/gntp-send
 
+
+
+Mac
+
+Checkout gntp-send , gntp-plugin and nixysa to the same directory.
+
+cd gntp-send
+make 
+cd ../gntp-plugin
+make -f Makefile.mac
+
+This builds gntp.plugin which needs to be placed in your firfox plugin directory.
+Restart firefox and then navigate to gntp-send/test.html.
+Growl needs to be accepting remote application registration using the password "password".
