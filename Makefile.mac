@@ -5,7 +5,7 @@ mac :  gntp.plugin/Contents/Resources/English.lproj gntp.plugin/Contents/MacOS
 	cp libGrowl.dylib gntp.plugin/Contents/MacOS/growl
 
 clean :
-	rm -f objs/* lib/* bin/* 
+	rm -f objs/* lib/* bin/* glue/*
 	rm -rf gntp.plugin/
 	scons -c
 	rm -f .sconsign.dblite parser.out
