@@ -2,16 +2,16 @@
 
 // Plugin info
 resource 'STR#' (126) { {
-    "GNTP2",
-    "Growl Messaging Plug-In"
+    "GNTP",
+    "Growl Notification Plug-In"
 } };
 
 // MIME Type descriptions
 resource 'STR#' (127) { {
-    "Hear me roar"
+    "Growl Notification Plug-In"
 } };
 
 // MIME Types
 resource 'STR#' (128) { {
-    "application/Growl" 
+    "application/gntp-plugin" 
 } };

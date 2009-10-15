@@ -6,30 +6,16 @@
 	<string>English</string>
 	<key>CFBundleExecutable</key>
 	<string>growl</string>
-	<key>CFBundleGetInfoString</key>
-	<string>Copyright 1007-2008 Aplix Corporation</string>
 	<key>CFBundleIdentifier</key>
-	<string>net.webvm</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
+	<string>gntp-plugin.psinnott.github.com</string>
 	<key>CFBundlePackageType</key>
 	<string>BRPL</string>
-	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>1.0</string>
-	<key>CFPlugInDynamicRegisterFunction</key>
-	<string></string>
-	<key>CFPlugInDynamicRegistration</key>
-	<string>YES</string>
-      <key>WebPluginMIMETypes</key>
+      	<key>WebPluginMIMETypes</key>
         <dict>
-                <key>application/Growl</key>
+                <key>application/gntp-plugin</key>
                 <dict>
                         <key>WebPluginTypeDescription</key>
-                        <string>Basic plugin sample</string>
+                        <string>Growl Notifications</string>
                 </dict>
         </dict>
 
