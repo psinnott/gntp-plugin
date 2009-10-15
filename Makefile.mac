@@ -10,6 +10,7 @@ clean :
 	rm -f objs/* lib/* bin/* 
 	rm -rf gntp.plugin/
 	scons -c
+	rm -f .sconsign.dblite
 
 gntp.plugin :
 	mkdir $@
