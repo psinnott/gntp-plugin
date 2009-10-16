@@ -20,8 +20,6 @@ extern "C" {
   }
 
   NPError NP_GetValue(NPP instance, NPPVariable variable, void *value) {
-	printf("boom\n");
-	exit(1);
     switch (variable) {
       case NPPVpluginNameString:
         *static_cast<const char **>(value) = "Hello World";
