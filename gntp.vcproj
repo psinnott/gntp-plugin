@@ -128,7 +128,7 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories=".;glue;..\..\..\nixysa\static_glue\npapi;..\nixysa\third_party\npapi\include"
+				AdditionalIncludeDirectories="headers;glue;&quot;..\gntp-send\headers.&quot;;..\nixysa\nixysa\\static_glue\npapi;..\nixysa\third_party\npapi\include"
 				PreprocessorDefinitions="NDEBUG;WIN32;_WIN32;_WINDOWS;OS_WINDOWS;WIN32_LEAN_AND_MEAN;NOMINMAX"
 				RuntimeLibrary="2"
 				WarningLevel="3"
@@ -146,7 +146,9 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="growl.lib"
 				OutputFile="$(OutDir)\np$(ProjectName).dll"
+				AdditionalLibraryDirectories="&quot;..\gntp-send\lib&quot;"
 				ModuleDefinitionFile="windows\gntp.def"
 				GenerateDebugInformation="true"
 				OptimizeReferences="2"

@@ -1,11 +1,12 @@
+Mac
+
 Requirements
 
-Nixysa		-	http://code.google.com/p/nixysa/
+nixysa		-	http://code.google.com/p/nixysa/
 gntp-send	-	http://github.com/psinnott/gntp-send
+scons		-	http://www.scons.org/
+gcc and make	-	Apple developer cd
 
-
-
-Mac
 
 Checkout gntp-send , gntp-plugin and nixysa to the same directory.
 
@@ -17,3 +18,26 @@ make -f Makefile.mac
 This builds gntp.plugin which needs to be placed in your firfox plugin directory.
 Restart firefox and then navigate to gntp-send/test.html.
 Growl needs to be accepting remote application registration using the password "password".
+
+
+
+
+Windows
+
+nixysa		-	http://code.google.com/p/nixysa/
+gntp-send	-	http://github.com/psinnott/gntp-send
+python		-	http://www.python.org/
+visual studio	-	http://www.microsoft.com/exPress/
+nmake		-	http://johnbokma.com/perl/make-for-windows.html
+
+Checkout gntp-send , gntp-plugin and nixysa to the same directory.
+
+cd gntp-send
+nmake -f Makefile.msc shared
+cd ..\gntp-plugins
+open gntp.vcproj in visual studio and build
+
+This builds npgntp.dll which together with growl.dll from gntp-send\lib needs to be placed in your firfox plugin directory.
+Restart firefox and then navigate to gntp-send/test.html.
+Growl needs to be accepting remote application registration using the password "password".
+
