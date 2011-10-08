@@ -26,7 +26,7 @@ Windows
 
 nixysa		-	http://code.google.com/p/nixysa/
 gntp-send	-	http://github.com/psinnott/gntp-send
-python		-	http://www.python.org/
+python		-	http://www.python.org/ (you need to add python.exe to your system path)
 pywin32   - http://sourceforge.net/projects/pywin32/files/pywin32/
 visual studio	-	http://www.microsoft.com/exPress/
 nmake		-	http://johnbokma.com/perl/make-for-windows.html
