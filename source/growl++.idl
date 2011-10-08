@@ -1,5 +1,5 @@
 [binding_model=by_pointer, include="growl++.hpp"] class Growl {
-  Growl( std::string _application);
-  void Notify( std::string title  , std::string message );
+  Growl( std::string _application , std::string _icon , std::string _password );
+  void Notify( std::string title  , std::string message , std::string icon );
 };
 

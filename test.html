@@ -4,12 +4,12 @@
 
 function init() {
   var plugin = document.getElementById("plugin");
-  var g = plugin.Growl("test");
+  var g = plugin.Growl("test","NULL","password");
   if (!g) {
     alert("no plugin");
   }
-  g.notify("test status","working");
-
+  g.notify("test status","working","http://www.growlforwindows.com/gfw/images/growl4windows.jpg");
+  g.notify("test status","working","NULL");
 }
 </script>
 </head>
