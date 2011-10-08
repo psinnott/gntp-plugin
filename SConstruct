@@ -11,8 +11,8 @@ env = Environment(
     STATIC_GLUE_DIR = '$NIXYSA_DIR/static_glue/npapi',
     NPAPI_DIR = '$ROOT/third_party/npapi/include',
     GLUE_DIR = 'glue',
-    CPPPATH=['.', '$STATIC_GLUE_DIR', '$NPAPI_DIR', '$GLUE_DIR' , './headers/' , '../../growl/gntp-send/headers/' ],
-	LIBPATH="../../growl/gntp-send/lib/"
+    CPPPATH=['.', '$STATIC_GLUE_DIR', '$NPAPI_DIR', '$GLUE_DIR' , './headers/' , '../gntp-send/headers/' ],
+	LIBPATH="../gntp-send/lib/"
 )
 env.Append(ENV={'PYTHON': sys.executable})
 if sys.platform == 'win32':
