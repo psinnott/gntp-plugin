@@ -5,6 +5,9 @@ Requirements
 nixysa		-	http://code.google.com/p/nixysa/
 gntp-send	-	http://github.com/psinnott/gntp-send
 scons		-	http://www.scons.org/
+setuptools - http://pypi.python.org/pypi/setuptools#files
+python gflags - http://code.google.com/p/python-gflags/downloads/list
+PLY - http://www.dabeaz.com/ply/
 gcc and make	-	Apple developer cd
 
 
@@ -34,7 +37,7 @@ nmake		-	http://johnbokma.com/perl/make-for-windows.html
 Checkout gntp-send , gntp-plugin and nixysa to the same directory.
 
 cd gntp-send
-nmake -f Makefile.msc shared
+nmake -f Makefile.msc 
 cd ..\gntp-plugins
 open gntp.vcproj in visual studio and build
 
