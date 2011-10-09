@@ -14,6 +14,9 @@ env = Environment(
     CPPPATH=['.', '$STATIC_GLUE_DIR', '$NPAPI_DIR', '$GLUE_DIR' , './headers/' , '../gntp-send/headers/' ],
 	LIBPATH="../gntp-send/lib/"
 )
+env.Append( CCFLAGS = '-arch  i386 -arch x86_64' )
+env.Append( LINKFLAGS = '-arch  i386 -arch x86_64' )
+
 env.Append(ENV={'PYTHON': sys.executable})
 if sys.platform == 'win32':
   env.Append(CODEGEN = 'codegen.bat',
