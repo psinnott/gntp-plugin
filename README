@@ -13,6 +13,8 @@ gcc and make	-	Apple developer cd
 
 Checkout gntp-send , gntp-plugin and nixysa to the same directory.
 
+edit gntp-send/Makefile and uncomment the second ARCH , this causes gntp-send to be built with support for both 64 and 32 bit.
+
 cd gntp-send
 make 
 cd ../gntp-plugin
