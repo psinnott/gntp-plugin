@@ -30,6 +30,7 @@ Growl::Growl(std::string  _application , std::string _icon , std::string _passwo
 	}
 
 	growl_tcp_register( "localhost" , application , (const char**)n , 1 , password , icon );
+	growl_udp_register( "localhost" , application , (const char**)n , 1 , password );
 }
 
 
@@ -59,4 +60,5 @@ void Growl::Notify(std::string title, std::string message , std::string _icon )
 	}
 
 	growl_tcp_notify( "localhost" , application , "web_alert" , title.c_str() , message.c_str() , password , NULL , icon );
+	growl_udp_notify( "localhost" , application , "web_alert" , title.c_str() , message.c_str() , password );
 }
